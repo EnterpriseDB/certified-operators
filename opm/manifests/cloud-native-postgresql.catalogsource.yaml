@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: cloud-native-postgresql-manifests
+  namespace: openshift-marketplace
+
+spec:
+  sourceType: grpc
+  image: quay.io/enterprisedb/cloud-native-postgresql-ocp-certified-testing:index-1.11.0
+  secrets:
+  - postgresql-operator-pull-secret
