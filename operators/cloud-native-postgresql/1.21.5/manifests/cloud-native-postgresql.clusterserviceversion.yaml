@@ -68,8 +68,8 @@ metadata:
     capabilities: Auto Pilot
     categories: Database
     certified: "true"
-    containerImage: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
-    createdAt: "2024-04-09T15:14:41Z"
+    containerImage: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
+    createdAt: "2024-04-09T16:13:27Z"
     description: EDB Postgres for Kubernetes is an open source operator designed to manage highly available PostgreSQL databases with a primary/standby architecture on any supported Kubernetes cluster.
     features.operators.openshift.io/disconnected: "true"
     features.operators.openshift.io/fips-compliant: "true"
@@ -704,16 +704,16 @@ spec:
                       - name: WEBHOOK_CERT_DIR
                         value: /apiserver.local.config/certificates
                       - name: RELATED_IMAGE_CNP
-                        value: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
+                        value: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
                       - name: OPERATOR_IMAGE_NAME
-                        value: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
+                        value: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
                       - name: OPERATOR_NAMESPACE
                         valueFrom:
                           fieldRef:
                             fieldPath: metadata.namespace
                       - name: MONITORING_QUERIES_CONFIGMAP
                         value: postgresql-operator-default-monitoring
-                    image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
+                    image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
                     livenessProbe:
                       httpGet:
                         path: /readyz
@@ -1132,13 +1132,12 @@ spec:
   provider:
     name: The EDB Postgres for Kubernetes Contributors
   relatedImages:
-    - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
+    - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
       name: cnp
-    - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
+    - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
       name: manager
-    - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6
-      name: cloud-native-postgres-testing-07473d078f836e7ddecf2f75155c204fe85bce22b8951c01fd3b1aac6d5daab6-annotation
-  replaces: v1.21.3
+    - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72
+      name: cloud-native-postgres-testing-ffc85d797463471894647012ee9ef5af18a0f53b7029c23533ad731c4ce62b72-annotation
   version: 1.21.5
   webhookdefinitions:
     - admissionReviewVersions:
