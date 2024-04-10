@@ -2,82 +2,12 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
   annotations:
-    alm-examples: |-
-      [
-        {
-          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
-          "kind": "Backup",
-          "metadata": {
-            "name": "backup-sample"
-          },
-          "spec": {
-            "cluster": {
-              "name": "cluster-sample"
-            }
-          }
-        },
-        {
-          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
-          "kind": "Cluster",
-          "metadata": {
-            "name": "cluster-sample"
-          },
-          "spec": {
-            "instances": 3,
-            "logLevel": "info",
-            "primaryUpdateStrategy": "unsupervised",
-            "storage": {
-              "size": "1Gi"
-            },
-            "walStorage": {
-              "size": "1Gi"
-            }
-          }
-        },
-        {
-          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
-          "kind": "Pooler",
-          "metadata": {
-            "name": "pooler-sample-rw"
-          },
-          "spec": {
-            "cluster": {
-              "name": "cluster-sample"
-            },
-            "instances": 1,
-            "pgbouncer": {
-              "poolMode": "session"
-            },
-            "type": "rw"
-          }
-        },
-        {
-          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
-          "kind": "ScheduledBackup",
-          "metadata": {
-            "name": "scheduledbackup-sample"
-          },
-          "spec": {
-            "cluster": {
-              "name": "cluster-sample"
-            },
-            "schedule": "0 0 0 * * *"
-          }
-        }
-      ]
     capabilities: Auto Pilot
     categories: Database
     certified: "true"
     containerImage: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:fdd765b6b6248855be14518b3ebc523ab7c1eb14a232f5faaabbff88b9e44a7b
     createdAt: "2024-04-05T13:01:26Z"
     description: EDB Postgres for Kubernetes is an open source operator designed to manage highly available PostgreSQL databases with a primary/standby architecture on any supported Kubernetes cluster.
-    features.operators.openshift.io/disconnected: "true"
-    features.operators.openshift.io/fips-compliant: "true"
-    features.operators.openshift.io/proxy-aware: "false"
-    features.operators.openshift.io/tls-profiles: "false"
-    features.operators.openshift.io/token-auth-aws: "false"
-    features.operators.openshift.io/token-auth-azure: "false"
-    features.operators.openshift.io/token-auth-gcp: "false"
     olm.skipRange: '>= 1.18.0 < 1.22.3'
     operators.operatorframework.io/builder: operator-sdk-v1.31.0
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
