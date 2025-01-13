@@ -7,89 +7,142 @@ entries:
     name: cloud-native-postgresql
     schema: olm.package
   - entries:
+      - name: cloud-native-postgresql.v1.18.7
+        skipRange: '>= 1.18.0 < 1.18.7'
+      - name: cloud-native-postgresql.v1.18.8
+        skipRange: '>= 1.18.0 < 1.18.8'
+        replaces: cloud-native-postgresql.v1.18.7
+      - name: cloud-native-postgresql.v1.18.9
+        skipRange: '>= 1.18.0 < 1.18.9'
+        replaces: cloud-native-postgresql.v1.18.8
       - name: cloud-native-postgresql.v1.18.10
-        replaces: cloud-native-postgresql.v1.18.9
-      - name: cloud-native-postgresql.v1.18.13
+        skipRange: '>= 1.18.0 < 1.18.10'
+      - name: cloud-native-postgresql.v1.18.11
+        skipRange: '>= 1.18.0 < 1.18.11'
         replaces: cloud-native-postgresql.v1.18.10
+      - name: cloud-native-postgresql.v1.18.12
+        skipRange: '>= 1.18.0 < 1.18.12'
+      - name: cloud-native-postgresql.v1.18.13
+        skipRange: '>= 1.18.0 < 1.18.13'
+        replaces: cloud-native-postgresql.v1.18.12
     name: stable-v1.18
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
+      - name: cloud-native-postgresql.v1.19.0
+        replaces: cloud-native-postgresql.v1.18.13
+      - name: cloud-native-postgresql.v1.19.1
+        skipRange: '>=1.19.0 < 1.19.1'
+      - name: cloud-native-postgresql.v1.19.2
+        skipRange: '>=1.19.0 < 1.19.2'
+      - name: cloud-native-postgresql.v1.19.3
+        skipRange: '>=1.19.0 < 1.19.3'
+      - name: cloud-native-postgresql.v1.19.4
+        skipRange: '>=1.19.0 < 1.19.4'
+      - name: cloud-native-postgresql.v1.19.5
+        skipRange: '>=1.19.0 < 1.19.5'
+        replaces: cloud-native-postgresql.v1.19.4
       - name: cloud-native-postgresql.v1.19.6
-        skipRange: '>=1.15.3 < 1.19.6'
+        skipRange: '>=1.19.0 < 1.19.6'
+        replaces: cloud-native-postgresql.v1.19.5
     name: stable-v1.19
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
+      - name: cloud-native-postgresql.v1.20.0
+        replaces: cloud-native-postgresql.v1.19.6
+      - name: cloud-native-postgresql.v1.20.1
+        skipRange: '>=1.20.0 < 1.20.1'
+      - name: cloud-native-postgresql.v1.20.2
+        skipRange: '>=1.20.0 < 1.20.2'
+      - name: cloud-native-postgresql.v1.20.3
+        skipRange: '>=1.20.0 < 1.20.3'
+        replaces: cloud-native-postgresql.v1.20.2
       - name: cloud-native-postgresql.v1.20.4
+        skipRange: '>=1.20.0 < 1.20.4'
+        replaces: cloud-native-postgresql.v1.20.3
+        skipRange: '>=1.20.0 < 1.20.5'
       - name: cloud-native-postgresql.v1.20.5
         replaces: cloud-native-postgresql.v1.20.4
+      - name: cloud-native-postgresql.v1.20.6
+        skipRange: '>=1.20.0 < 1.20.6'
     name: stable-v1.20
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
+      - name: cloud-native-postgresql.v1.21.0
+        replaces: cloud-native-postgresql.v1.20.6
       - name: cloud-native-postgresql.v1.21.1
-      - name: cloud-native-postgresql.v1.21.3
+        skipRange: '>= 1.21.0 < 1.21.1'
+        replaces: cloud-native-postgresql.v1.21.0
+      - name: cloud-native-postgresql.v1.21.2
+        skipRange: '>= 1.21.0 < 1.21.2'
         replaces: cloud-native-postgresql.v1.21.1
+      - name: cloud-native-postgresql.v1.21.3
+        skipRange: '>= 1.21.0 < 1.21.3'
+        replaces: cloud-native-postgresql.v1.21.2
       - name: cloud-native-postgresql.v1.21.4
+        skipRange: '>= 1.21.0 < 1.21.4'
         replaces: cloud-native-postgresql.v1.21.3
       - name: cloud-native-postgresql.v1.21.5
-        replaces: cloud-native-postgresql.v1.21.4
+        skipRange: '>= 1.21.0 < 1.21.5'
       - name: cloud-native-postgresql.v1.21.6
+        skipRange: '>= 1.21.0 < 1.21.6'
         replaces: cloud-native-postgresql.v1.21.5
     name: stable-v1.21
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
+      - name: cloud-native-postgresql.v1.22.0
+        replaces: cloud-native-postgresql.v1.21.6
       - name: cloud-native-postgresql.v1.22.1
+        skipRange: '>= 1.22.0 < 1.22.1'
       - name: cloud-native-postgresql.v1.22.2
-        skipRange: '>= 1.18.0 < 1.22.2'
+        skipRange: '>= 1.22.0 < 1.22.2'
+        replaces: cloud-native-postgresql.v1.22.1
       - name: cloud-native-postgresql.v1.22.3
-        skipRange: '>= 1.18.0 < 1.22.3'
+        skipRange: '>= 1.22.0 < 1.22.3'
       - name: cloud-native-postgresql.v1.22.4
-        skipRange: '>= 1.18.0 < 1.22.4'
+        skipRange: '>= 1.22.0 < 1.22.4'
+        replaces: cloud-native-postgresql.v1.22.3
       - name: cloud-native-postgresql.v1.22.5
-        skipRange: '>= 1.18.0 < 1.22.5'
+        skipRange: '>= 1.22.0 < 1.22.5'
       - name: cloud-native-postgresql.v1.22.6
-        skipRange: '>= 1.18.0 < 1.22.6'
-        skips:
-          - cloud-native-postgresql.v1.22.4
-          - cloud-native-postgresql.v1.22.3
-          - cloud-native-postgresql.v1.22.2
-          - cloud-native-postgresql.v1.22.1
-          - cloud-native-postgresql.v1.22.0
-          - cloud-native-postgresql.v1.22.5
+        skipRange: '>= 1.22.0 < 1.22.6'
       - name: cloud-native-postgresql.v1.22.7
-        replaces: cloud-native-postgresql.v1.22.6
-        skipRange: '>= 1.18.0 < 1.22.7'
+        skipRange: '>= 1.22.0 < 1.22.7'
+      - name: cloud-native-postgresql.v1.22.8
+        skipRange: '>= 1.22.0 < 1.22.8'
     name: stable-v1.22
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
       - name: cloud-native-postgresql.v1.23.1
-        skipRange: '>= 1.18.0 < 1.23.1'
+        replaces: cloud-native-postgresql.v1.22.8
+      - name: cloud-native-postgresql.v1.23.1
+        skipRange: '>= 1.23.0 < 1.23.1'
       - name: cloud-native-postgresql.v1.23.2
-        skipRange: '>= 1.18.0 < 1.23.2'
+        skipRange: '>= 1.23.0 < 1.23.2'
+        replaces: cloud-native-postgresql.v1.23.1
       - name: cloud-native-postgresql.v1.23.3
-        skipRange: '>= 1.18.0 < 1.23.3'
+        skipRange: '>= 1.23.0 < 1.23.3'
       - name: cloud-native-postgresql.v1.23.4
-        skips:
-          - cloud-native-postgresql.v1.23.2
-          - cloud-native-postgresql.v1.23.1
-          - cloud-native-postgresql.v1.23.0
-          - cloud-native-postgresql.v1.23.3
+        skipRange: '>= 1.23.0 < 1.23.4'
+        replaces: cloud-native-postgresql.v1.23.3
       - name: cloud-native-postgresql.v1.23.5
-        replaces: cloud-native-postgresql.v1.23.4
-        skipRange: '>= 1.18.0 < 1.23.5'
+        skipRange: '>= 1.23.0 < 1.23.5'
+      - name: cloud-native-postgresql.v1.23.6
+        skipRange: '>= 1.23.0 < 1.23.6'
     name: stable-v1.23
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
       - name: cloud-native-postgresql.v1.24.0
+        replaces: cloud-native-postgresql.v1.23.6
       - name: cloud-native-postgresql.v1.24.1
-        replaces: cloud-native-postgresql.v1.24.0
+        skipRange: '>= 1.24.0 < 1.24.1'
       - name: cloud-native-postgresql.v1.24.2
-        replaces: cloud-native-postgresql.v1.24.1
+        skipRange: '>= 1.24.0 < 1.24.2'
     name: stable-v1.24
     package: cloud-native-postgresql
     schema: olm.channel
