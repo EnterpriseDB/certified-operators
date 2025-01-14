@@ -31,7 +31,7 @@ entries:
     package: cloud-native-postgresql
     schema: olm.channel
   - entries:
-      - name: cloud-native-postgresql.v1.23.1
+      - name: cloud-native-postgresql.v1.23.0
         replaces: cloud-native-postgresql.v1.22.8
       - name: cloud-native-postgresql.v1.23.1
         skipRange: '>= 1.23.0 < 1.23.1'
