@@ -185,7 +185,6 @@ metadata:
     features.operators.openshift.io/token-auth-aws: "false"
     features.operators.openshift.io/token-auth-azure: "false"
     features.operators.openshift.io/token-auth-gcp: "false"
-    olm.skipRange: '>= 1.18.0 < 1.25.0-dev74'
     operators.operatorframework.io/builder: operator-sdk-v1.38.0
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v4
     repository: https://github.com/EnterpriseDB/cloud-native-postgres
@@ -1431,7 +1430,6 @@ spec:
       name: manager
     - image: ghcr.io/enterprisedb/cloud-native-postgres-testing@sha256:80b346feaa8dc71593bb33acdb03bdda8c500edfeeb054d45c982bdd3887cdbd
       name: cloud-native-postgres-testing-80b346feaa8dc71593bb33acdb03bdda8c500edfeeb054d45c982bdd3887cdbd-annotation
-  replaces: cloud-native-postgresql.v1.24.0
   version: 1.25.0-dev74
   webhookdefinitions:
     - admissionReviewVersions:
