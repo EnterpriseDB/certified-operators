@@ -156,7 +156,7 @@ metadata:
     capabilities: Basic Install
     categories: Database,AI/Machine Learning
     containerImage: docker.enterprisedb.com/pgai-platform/edb-hcp-operator/manager@sha256:7b3bd0f4b3536938ec16935c5f31bfad2b570c8f23430e94fc1a67b2bd8d8b06
-    createdAt: "2025-12-16T03:00:39Z"
+    createdAt: "2026-01-14T13:21:05Z"
     description: Unify transactional, analytical, and AI workloads and bring cloud agility to your hybrid data infrastructure.
     features.operators.openshift.io/disconnected: "true"
     features.operators.openshift.io/fips-compliant: "true"
