@@ -158,7 +158,7 @@ metadata:
     categories: Database
     certified: "true"
     containerImage: docker.enterprisedb.com/k8s/edb-postgres-for-cloudnativepg@sha256:ef808aafc9921c5097a44acca50d957671ec84cb643d680d6904f645d3ed2c24
-    createdAt: "2025-12-16T10:37:27Z"
+    createdAt: "2026-02-05T15:59:32Z"
     description: EDB Postgres for Kubernetes is an operator designed to manage highly available PostgreSQL databases with a primary/standby architecture on any supported Kubernetes cluster.
     features.operators.openshift.io/disconnected: "true"
     features.operators.openshift.io/fips-compliant: "true"

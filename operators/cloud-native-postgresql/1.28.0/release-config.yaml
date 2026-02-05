@@ -1,0 +1,5 @@
+---
+merge: true
+catalog_templates:
+  - template_name: "catalog_v4.16-end.yaml"
+    channels: "stable-v1.28"
