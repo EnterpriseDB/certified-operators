@@ -108,12 +108,19 @@ entries:
           - cloud-native-postgresql.v1.25.1
           - cloud-native-postgresql.v1.25.2
       - name: cloud-native-postgresql.v1.25.4
-        skipRange: '>= 1.18.0 < 1.25.4'
         skips:
           - cloud-native-postgresql.v1.25.0
           - cloud-native-postgresql.v1.25.1
           - cloud-native-postgresql.v1.25.2
           - cloud-native-postgresql.v1.25.3
+      - name: cloud-native-postgresql.v1.25.5
+        skipRange: '>= 1.18.0 < 1.25.5'
+        skips:
+          - cloud-native-postgresql.v1.25.0
+          - cloud-native-postgresql.v1.25.1
+          - cloud-native-postgresql.v1.25.2
+          - cloud-native-postgresql.v1.25.3
+          - cloud-native-postgresql.v1.25.4
     name: stable-v1.25
     package: cloud-native-postgresql
     schema: olm.channel
