@@ -10,6 +10,8 @@ entries:
   - name: edb-hcp-operator.v1.3.3
   - name: edb-hcp-operator.v1.3.4
     replaces: edb-hcp-operator.v1.3.3
+  - name: edb-hcp-operator.v1.3.5
+    replaces: edb-hcp-operator.v1.3.4
   name: stable
   package: edb-hcp-operator
   schema: olm.channel
@@ -17,6 +19,8 @@ entries:
   - name: edb-hcp-operator.v1.3.3
   - name: edb-hcp-operator.v1.3.4
     replaces: edb-hcp-operator.v1.3.3
+  - name: edb-hcp-operator.v1.3.5
+    replaces: edb-hcp-operator.v1.3.4
   name: alpha
   package: edb-hcp-operator
   schema: olm.channel
@@ -24,6 +28,8 @@ entries:
   - name: edb-hcp-operator.v1.3.3
   - name: edb-hcp-operator.v1.3.4
     replaces: edb-hcp-operator.v1.3.3
+  - name: edb-hcp-operator.v1.3.5
+    replaces: edb-hcp-operator.v1.3.4
   name: lts-v1.3
   package: edb-hcp-operator
   schema: olm.channel
@@ -38,4 +44,6 @@ entries:
   name: innovation
   package: edb-hcp-operator
   schema: olm.channel
+- image: registry.connect.redhat.com/enterprisedb/edb-hcp-operator@sha256:99a34d13b66145f0cd37f1172ef283b401ade025fd58472d558bd16d00f7dad1
+  schema: olm.bundle
 schema: olm.template.basic
