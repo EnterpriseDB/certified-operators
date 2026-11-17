@@ -1,0 +1,6 @@
+apiVersion: v1
+data:
+  SIDECAR_IMAGE: ghcr.io/enterprisedb/edb-plugin-for-cnpg-testing@sha256:c2b06ed42e4afda6362176f18357521beadebe29904a06eb9f7edb587a59692e
+kind: ConfigMap
+metadata:
+  name: edb-plugin-for-cnpg
