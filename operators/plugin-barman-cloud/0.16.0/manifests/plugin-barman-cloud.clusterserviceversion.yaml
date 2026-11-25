@@ -33,7 +33,7 @@ metadata:
       ]
     capabilities: Full Lifecycle
     categories: Database
-    containerImage: ghcr.io/cloudnative-pg/plugin-barman-cloud@sha256:6404a416718bd7aad943c67a25a7bb20d0558b43edfeab0bf167f013ca435882
+    containerImage: ghcr.io/enterprisedb/edb-plugin-barman-cloud-testing@sha256:d898fc12d7fc9e254555d4beefa2f22f59e61d14d3bab22041799a2ab481547c
     createdAt: "2026-11-25T11:27:41Z"
     description: Backup and recovery plugin for CloudNativePG, enabling online continuous physical backups of PostgreSQL clusters to object storage.
     operators.operatorframework.io/builder: operator-sdk-v1.42.3
@@ -292,7 +292,7 @@ spec:
                   value: ghcr.io/cloudnative-pg/plugin-barman-cloud-sidecar@sha256:c669259e20ed1e11fad821f735c396c19d929985aa05b9544b13ecc8b5a386d0
                 - name: SIDECAR_IMAGE
                   value: ghcr.io/cloudnative-pg/plugin-barman-cloud-sidecar@sha256:c669259e20ed1e11fad821f735c396c19d929985aa05b9544b13ecc8b5a386d0
-                image: ghcr.io/cloudnative-pg/plugin-barman-cloud@sha256:6404a416718bd7aad943c67a25a7bb20d0558b43edfeab0bf167f013ca435882
+                image: ghcr.io/enterprisedb/edb-plugin-barman-cloud-testing@sha256:d898fc12d7fc9e254555d4beefa2f22f59e61d14d3bab22041799a2ab481547c
                 name: barman-cloud
                 ports:
                 - containerPort: 9090
@@ -420,8 +420,8 @@ spec:
   relatedImages:
   - image: ghcr.io/cloudnative-pg/plugin-barman-cloud-sidecar@sha256:c669259e20ed1e11fad821f735c396c19d929985aa05b9544b13ecc8b5a386d0
     name: sidecar
-  - image: ghcr.io/cloudnative-pg/plugin-barman-cloud@sha256:6404a416718bd7aad943c67a25a7bb20d0558b43edfeab0bf167f013ca435882
+  - image: ghcr.io/enterprisedb/edb-plugin-barman-cloud-testing@sha256:d898fc12d7fc9e254555d4beefa2f22f59e61d14d3bab22041799a2ab481547c
     name: barman-cloud
-  - image: ghcr.io/cloudnative-pg/plugin-barman-cloud@sha256:6404a416718bd7aad943c67a25a7bb20d0558b43edfeab0bf167f013ca435882
+  - image: ghcr.io/enterprisedb/edb-plugin-barman-cloud-testing@sha256:d898fc12d7fc9e254555d4beefa2f22f59e61d14d3bab22041799a2ab481547c
     name: plugin-barman-cloud-6404a416718bd7aad943c67a25a7bb20d0558b43edfeab0bf167f013ca435882-annotation
   version: 0.16.0
